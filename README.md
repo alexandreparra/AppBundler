@@ -1,6 +1,6 @@
 ## AppBundler
 
-AppBundler is a simple MacOS program made with SwiftUI that creates a [standard bundle structure] (https://developer.apple.com/documentation/bundleresources/placing_content_in_a_bundle) out of your binary and image. You can also inspect a bundle to change it's name.
+AppBundler is a simple MacOS program made with SwiftUI that creates a [standard bundle structure](https://developer.apple.com/documentation/bundleresources/placing_content_in_a_bundle) out of your binary and image. You can also inspect a bundle to change it's name.
 
 
 ### Create bundle
