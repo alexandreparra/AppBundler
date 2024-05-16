@@ -11,8 +11,8 @@ To create a bundle you need to simply provide the bundle name and a native MacOS
 You can optionally provide an image to your bundle that will be displayed on your Finder, Launchpad and Dock.
 
 ### Edit bundle
-![edit bundle preview image 01](Assets/inspect_bundle_01.png)
-![edit bundle preview image 02](Assets/inspect_bundle_02.png)
+![edit bundle preview image 01](Assets/edit_bundle_01.png)
+![edit bundle preview image 02](Assets/edit_bundle_02.png)
 
 You can load any valid bundle and inspect it's name and image, and optionally edit the bundle name.
 
