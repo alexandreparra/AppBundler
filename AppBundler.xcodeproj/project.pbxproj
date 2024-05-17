@@ -16,7 +16,6 @@
 		6136EE9B2BCD45D300F43585 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6136EE9A2BCD45D300F43585 /* BundleExtension.swift */; };
 		618D67092BE63246007F8A61 /* FileSystemTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618D67082BE63246007F8A61 /* FileSystemTest.swift */; };
 		618E55232BB1F7AA00DC586B /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 618E55222BB1F7AA00DC586B /* Credits.html */; };
-		61CBF1A02BC31B3200533176 /* CreateBundleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CBF19F2BC31B3200533176 /* CreateBundleTests.swift */; };
 		61E29F492BAB1CC3001738D6 /* FileSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E29F482BAB1CC3001738D6 /* FileSystem.swift */; };
 		61F472082BB5DD8400587B93 /* FindFileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F472072BB5DD8400587B93 /* FindFileTests.swift */; };
 		61FEAD912BC0BD0C0074674A /* EdgeInsetsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FEAD902BC0BD0C0074674A /* EdgeInsetsExtension.swift */; };
@@ -46,7 +45,6 @@
 		61467C312BA71456000B6140 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		618D67082BE63246007F8A61 /* FileSystemTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystemTest.swift; sourceTree = "<group>"; };
 		618E55222BB1F7AA00DC586B /* Credits.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
-		61CBF19F2BC31B3200533176 /* CreateBundleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBundleTests.swift; sourceTree = "<group>"; };
 		61E29F482BAB1CC3001738D6 /* FileSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystem.swift; sourceTree = "<group>"; };
 		61F472052BB5DD8400587B93 /* AppBundlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppBundlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F472072BB5DD8400587B93 /* FindFileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFileTests.swift; sourceTree = "<group>"; };
@@ -136,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				61F472072BB5DD8400587B93 /* FindFileTests.swift */,
-				61CBF19F2BC31B3200533176 /* CreateBundleTests.swift */,
 				618D67082BE63246007F8A61 /* FileSystemTest.swift */,
 			);
 			path = AppBundlerTests;
@@ -269,7 +266,6 @@
 			files = (
 				61F472082BB5DD8400587B93 /* FindFileTests.swift in Sources */,
 				618D67092BE63246007F8A61 /* FileSystemTest.swift in Sources */,
-				61CBF1A02BC31B3200533176 /* CreateBundleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
