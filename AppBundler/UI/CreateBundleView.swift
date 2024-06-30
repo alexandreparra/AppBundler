@@ -45,14 +45,14 @@ struct CreateBundleView: View {
         
         let bundleSavePath = chooseFolder()
         if bundleSavePath != "" {
-            let success = createBundle(
+            let succeed = createBundle(
                 at: bundleSavePath,
                 withName: appState.bundleName,
                 binaryPath: appState.binaryPath,
                 iconLocation: appState.iconPath
             )
             
-            if success {
+            if succeed {
                 appState.bundleName = ""
                 appState.binaryPath = ""
                 appState.iconPath = ""

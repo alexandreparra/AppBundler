@@ -54,7 +54,7 @@ struct EditBundleView: View {
                 HStack {
                     Text("Bundle name:")
                     TextField("", text: $newBundleName).onChange(of: newBundleName, {
-                        didInfoChange()
+                        infoDidChange()
                     })
                 }
                 
@@ -108,7 +108,7 @@ struct EditBundleView: View {
         }
     }
     
-    func didInfoChange() {
+    func infoDidChange() {
         self.disableUpdateButton = self.newBundleName.isEmpty ||
                                    self.newBundleName == self.appState.bundleInfo.name
     }
