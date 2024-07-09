@@ -1,10 +1,3 @@
-//
-//  FileSystemTest.swift
-//  AppBundlerTests
-//
-//  Created by Ale on 04/05/24.
-//
-
 import XCTest
 @testable import AppBundler
 
@@ -19,6 +12,26 @@ final class FileSystemTest: XCTestCase {
             expectedFileNameWithExtension,
             result,
             "File named file_test.mock wasn't rename correctly to test_success.mock"
+        )
+    }
+    
+    func testDetermineBinaryType_executableShouldBeProperlyRecognized() throws {
+        let binaryName = "AppBundler"
+        let result = determineBinaryType(binaryName: binaryName)
+        XCTAssertEqual(
+            BinaryType.exec,
+            result,
+            "Pure executable binary wasn't properly recognized"
+        )
+    }
+    
+    func testDetermineBinaryType_jarShouldBeProperlyRecognized() throws {
+        let binaryName = "minecraft.jar"
+        let result = determineBinaryType(binaryName: binaryName)
+        XCTAssertEqual(
+            BinaryType.jar,
+            result,
+            "Jar wasn't properly recognized"
         )
     }
 }

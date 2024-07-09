@@ -1,14 +1,7 @@
-//
-//  AppBundlerTests.swift
-//  AppBundlerTests
-//
-//  Created by Ale on 28/03/24.
-//
-
 import XCTest
 @testable import AppBundler
 
-final class FindFileTests: XCTestCase {
+final class FindFileTest: XCTestCase {
     
     func testFindFileWithoutExtension_folderContainsIconNameWithoutExtension() throws {
         let iconName = "AppIcon"

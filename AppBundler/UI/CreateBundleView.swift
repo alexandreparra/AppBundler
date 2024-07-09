@@ -1,9 +1,3 @@
-//
-//  CreateBundleView.swift
-//  AppBundler
-//  Created on 17/03/24.
-//
-
 import SwiftUI
 
 struct CreateBundleView: View {
@@ -20,7 +14,7 @@ struct CreateBundleView: View {
                 Text("Binary Path:")
                 TextField(text: $appState.binaryPath) {}
                 Button("Choose") {
-                    appState.binaryPath = findIconPath()
+                    appState.binaryPath = chooseFile()
                 }
             }
             
@@ -28,7 +22,7 @@ struct CreateBundleView: View {
                 Text("Icon Path:")
                 TextField(text: $appState.iconPath) {}
                 Button("Choose") {
-                    appState.iconPath = findIconPath()
+                    appState.iconPath = chooseIcon()
                 }
             }
             
@@ -43,9 +37,9 @@ struct CreateBundleView: View {
            return
         }
         
-        let bundleSavePath = chooseFolder()
+        let bundleSavePath = chooseSaveFolder()
         if bundleSavePath != "" {
-            let succeed = createBundle(
+            let succeed = createNSBundle(
                 at: bundleSavePath,
                 withName: appState.bundleName,
                 binaryPath: appState.binaryPath,

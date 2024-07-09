@@ -1,9 +1,3 @@
-//
-//  AppBundlerApp.swift
-//  AppBundler
-//  Created on 17/03/24.
-//
-
 import SwiftUI
 
 enum ScreenType {
@@ -26,6 +20,30 @@ class AppState: ObservableObject {
     @Published var bundlePath = ""
     @Published var bundleInfo = BundleInfo(path: "", name: "", iconPath: "")
     @Published var image = Image(systemName: "exclamationmark.square.fill")
+    
+    @Published var newBundleName = ""
+    @Published var newIconPath = ""
+    @Published var disableUpdateButton = true
+    
+    func infoDidChange() {
+        if self.newBundleName.isEmpty {
+            self.disableUpdateButton = true
+            return
+        }
+        
+        self.disableUpdateButton = self.newBundleName == self.bundleInfo.name
+        
+        if !self.newIconPath.isEmpty {
+            self.disableUpdateButton = false
+        }
+    }
+    
+    func resetInspectBundleState() {
+        self.bundleInfo = BundleInfo(path: "", name: "", iconPath: "")
+        self.newBundleName = ""
+        self.newIconPath = ""
+        self.disableUpdateButton = true
+    }
 }
 
 @main
