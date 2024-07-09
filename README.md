@@ -1,5 +1,5 @@
 <p align="center">
-<img height="256" src="AppBundler/Assets.xcassets/AppIcon.appiconset/Icon256.png">
+<img height="256" src="AppBundler/Assets.xcassets/AppIcon.appiconset/AppIcon256.png">
 </p>
 
 <h1 align="center">AppBundler</h1>
