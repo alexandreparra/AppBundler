@@ -60,7 +60,7 @@ struct EditBundleView: View {
                 
                 HStack {
                     Text("Icon:")
-                    self.appState.image
+                    self.appState.imagePath
                         .resizable()
                         .frame(maxWidth: 72, maxHeight: 72)
                         .padding(EdgeInsets.all(padding: 2))
